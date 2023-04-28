@@ -1,11 +1,11 @@
 {
-  "name": "kstkn/dadata",
+  "name": "flowwow/dadata",
   "description": "Dadata API client (https://dadata.ru)",
   "minimum-stability": "stable",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/kstkn/dadata/issues",
-    "source": "https://github.com/kstkn/dadata"
+    "issues": "https://github.com/flowwow/dadata/issues",
+    "source": "https://github.com/flowwow/dadata"
   },
   "authors": [
     {
@@ -13,12 +13,21 @@
     }
   ],
   "require": {
-    "php": ">=5.5.0",
-    "guzzlehttp/guzzle": "^6.2"
+    "php": ">=7.3.0",
+    "guzzlehttp/guzzle": "^6.2|^7.0",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0|^9.0"
   },
   "autoload": {
     "psr-4": {
       "Dadata\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Dadata\\Tests\\": "tests/"
     }
   }
 }

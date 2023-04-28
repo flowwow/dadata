@@ -234,7 +234,8 @@ class Client
     public function getBalance()
     {
         $response = $this->query($this->prepareUri('profile/balance'), [], self::METHOD_GET);
-        return (float) $response;
+
+        return (float)$response;
     }
 
     /**
@@ -254,17 +255,13 @@ class Client
     {
         $request = new Request($method, $uri, [
             'Content-Type' => 'application/json',
-            'Authorization' => 'Token ' . $this->token,
+            'Authorization' => 'Token '.$this->token,
             'X-Secret' => $this->secret,
         ], 0 < count($params) ? json_encode($params) : null);
 
         $response = $this->httpClient->send($request, $this->httpOptions);
 
-        $result = json_decode($response->getBody(), true);
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new \RuntimeException('Error parsing response: ' . json_last_error_msg());
-        }
+        $result = json_decode($response->getBody(), true, 512, JSON_THROW_ON_ERROR);
 
         if (empty($result)) {
             throw new \RuntimeException('Empty result');
@@ -281,14 +278,14 @@ class Client
      */
     protected function prepareUri($endpoint)
     {
-        return $this->baseUrl . '/' . $this->version . '/' . $endpoint;
+        return $this->baseUrl.'/'.$this->version.'/'.$endpoint;
     }
 
     /**
      * Populates object with data.
      *
      * @param AbstractResponse $object
-     * @param array            $data
+     * @param array $data
      *
      * @return AbstractResponse
      * @throws \ReflectionException
@@ -319,38 +316,57 @@ class Client
     protected function populateParty(array $response)
     {
         $management = null;
-        $managementData = $response['data']['management'];
-        if (is_array($managementData) && array_key_exists('name', $managementData) && array_key_exists('post', $managementData)) {
-            list($name, $post) = array_values($response['data']['management']);
-            $management = new Party\ManagementDto($name, $post);
+        if (array_key_exists('management', $response['data'])
+            && is_array($response['data']['management'])
+            && array_key_exists('name', $response['data']['management'])
+            && array_key_exists('post', $response['data']['management'])
+        ) {
+            $management = new Party\ManagementDto(
+                $response['data']['management']['name'],
+                $response['data']['management']['post']
+            );
         }
 
-        $type = $response['data']['opf']['type'];
-        $code = $response['data']['opf']['code'];
-        $full = $response['data']['opf']['full'];
-        $short = $response['data']['opf']['short'];
-        $opf = new Party\OpfDto($type, $code, $full, $short);
+        $opf = new Party\OpfDto(
+            $response['data']['opf']['type'],
+            $response['data']['opf']['code'],
+            $response['data']['opf']['full'],
+            $response['data']['opf']['short']
+        );
 
-        list($fullWithOpf, $shortWithOpf, $latin, $full, $short) = array_values($response['data']['name']);
-        $name = new Party\NameDto($fullWithOpf, $shortWithOpf, $latin, $full, $short);
+        $name = new Party\NameDto(
+            $response['data']['name']['full_with_opf'],
+            $response['data']['name']['short_with_opf'],
+            $response['data']['name']['latin'],
+            $response['data']['name']['full'],
+            $response['data']['name']['short']
+        );
 
-        list($status, $actualityDate, $registrationDate, $liquidationDate) = array_values($response['data']['state']);
-        $state = new Party\StateDto($status, $actualityDate, $registrationDate, $liquidationDate);
+        $state = new Party\StateDto(
+            $response['data']['state']['status'],
+            $response['data']['state']['actuality_date'],
+            $response['data']['state']['registration_date'],
+            $response['data']['state']['liquidation_date']
+        );
 
-        list($value, $unrestrictedValue) = array_values($response['data']['address']);
-        $simpleAddress = new Party\AddressDto($value, $unrestrictedValue);
+        $simpleAddress = new Party\AddressDto(
+            $response['data']['address']['value'] ?? null,
+            $response['data']['address']['unrestricted_value'] ?? null,
+        );
 
         $address = null;
-        if (is_array($response['data']['address']['data'])) {
+        if (isset($response['data']['address']['data'])
+            && is_array($response['data']['address']['data'])
+        ) {
             $address = $this->populate(new Address(), $response['data']['address']['data']);
         }
 
         return new Party\Party(
             $response['value'],
             $response['unrestricted_value'],
-            $response['data']['kpp'],
+            $response['data']['kpp'] ?? null,
             $management,
-            $response['data']['branch_type'],
+            $response['data']['branch_type'] ?? null,
             $response['data']['type'],
             $opf,
             $name,
@@ -368,7 +384,7 @@ class Client
      * Guesses and converts property type by phpdoc comment.
      *
      * @param \ReflectionProperty $property
-     * @param  mixed $value
+     * @param mixed $value
      * @return mixed
      */
     protected function getValueByAnnotatedType(\ReflectionProperty $property, $value)
@@ -378,10 +394,10 @@ class Client
             switch ($matches[1]) {
                 case 'integer':
                 case 'int':
-                    $value = (int) $value;
+                    $value = (int)$value;
                     break;
                 case 'float':
-                    $value = (float) $value;
+                    $value = (float)$value;
                     break;
             }
         }
@@ -397,9 +413,9 @@ class Client
      */
     public function detectAddressByIp($ip)
     {
-        $request = new Request('get', $this->baseSuggestionsUrl . 'detectAddressByIp' . '?ip=' . $ip, [
+        $request = new Request('get', $this->baseSuggestionsUrl.'detectAddressByIp'.'?ip='.$ip, [
             'Accept' => 'application/json',
-            'Authorization' => 'Token ' . $this->token,
+            'Authorization' => 'Token '.$this->token,
         ]);
 
         $response = $this->httpClient->send($request);
@@ -407,7 +423,7 @@ class Client
         $result = json_decode($response->getBody(), true);
 
         if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new \RuntimeException('Error parsing response: ' . json_last_error_msg());
+            throw new \RuntimeException('Error parsing response: '.json_last_error_msg());
         }
 
         if (!array_key_exists('location', $result)) {
@@ -449,7 +465,7 @@ class Client
      */
     public function getAddressById($addressId)
     {
-        $response = $this->query($this->baseSuggestionsUrl . 'findById/address', ['query' => $addressId]);
+        $response = $this->query($this->baseSuggestionsUrl.'findById/address', ['query' => $addressId]);
 
         if (is_array($response) && 0 < count($response)) {
             /** @var Address $address */
@@ -486,6 +502,7 @@ class Client
             $party = $this->populateParty($arParty);
             $collection->attach($party);
         }
+
         return $collection;
     }
 
@@ -498,6 +515,6 @@ class Client
      */
     protected function prepareSuggestionsUri($endpoint)
     {
-        return $this->baseSuggestionsUrl . $endpoint;
+        return $this->baseSuggestionsUrl.$endpoint;
     }
 }

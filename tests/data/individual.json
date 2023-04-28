@@ -1,0 +1,140 @@
+{
+  "suggestions": [
+    {
+      "value": "ИП Анонимов Аноним Анонимович",
+      "unrestricted_value": "ИП Анонимов Аноним Анонимович",
+      "data": {
+        "citizenship": {
+          "code": {
+            "numeric": 643,
+            "alpha_3": "RUS"
+          },
+          "name": {
+            "full": "Российская Федерация",
+            "short": "Россия"
+          }
+        },
+        "fio": {
+          "surname": "Анонимов",
+          "name": "Аноним",
+          "patronymic": "Анонимович",
+          "gender": null,
+          "source": null,
+          "qc": null
+        },
+        "source": null,
+        "qc": null,
+        "hid": "7b40b1dbd1a21cf0eeec5efa1afa56447633873b18e5b6f7c3fdfb09b63957be",
+        "type": "INDIVIDUAL",
+        "state": {
+          "status": "ACTIVE",
+          "code": null,
+          "actuality_date": 1682553600000,
+          "registration_date": 1682380800000,
+          "liquidation_date": null
+        },
+        "opf": {
+          "type": "2014",
+          "code": "50102",
+          "full": "Индивидуальный предприниматель",
+          "short": "ИП"
+        },
+        "name": {
+          "full_with_opf": "Индивидуальный предприниматель Анонимов Аноним Анонимович",
+          "short_with_opf": "ИП Анонимов Аноним Анонимович",
+          "latin": null,
+          "full": "Анонимов Аноним Анонимович",
+          "short": null
+        },
+        "inn": "525716891723",
+        "ogrn": "323527500051384",
+        "okpo": null,
+        "okato": null,
+        "oktmo": null,
+        "okogu": null,
+        "okfs": null,
+        "okved": "62.01",
+        "okveds": [
+          {
+            "main": true,
+            "type": "2014",
+            "code": "62.01",
+            "name": "Разработка компьютерного программного обеспечения"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "63.11",
+            "name": "Деятельность по обработке данных, предоставление услуг по размещению информации и связанная с этим деятельность"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "63.12",
+            "name": "Деятельность web-порталов"
+          }
+        ],
+        "authorities": {
+          "fts_registration": {
+            "type": "FEDERAL_TAX_SERVICE",
+            "code": "5275",
+            "name": "Межрайонная инспекция Федеральной налоговой службы № 15 по Нижегородской области",
+            "address": ",603155,,, Нижний Новгород г,, Фрунзе ул, д 7,,"
+          },
+          "fts_report": {
+            "type": "FEDERAL_TAX_SERVICE",
+            "code": "5262",
+            "name": "Межрайонная инспекция Федеральной налоговой службы № 22 по Нижегородской области",
+            "address": null
+          },
+          "pf": {
+            "type": "PENSION_FUND",
+            "code": "062055",
+            "name": "Отделение Фонда пенсионного и социального страхования Российской Федерации по Нижегородской области",
+            "address": null
+          },
+          "sif": null
+        },
+        "documents": {
+          "fts_registration": null,
+          "fts_report": {
+            "type": "FTS_REPORT",
+            "series": null,
+            "number": null,
+            "issue_date": 1682380800000,
+            "issue_authority": "5262"
+          },
+          "pf_registration": {
+            "type": "PF_REGISTRATION",
+            "series": null,
+            "number": "062055039410",
+            "issue_date": 1682467200000,
+            "issue_authority": "062055"
+          },
+          "sif_registration": null,
+          "smb": null
+        },
+        "licenses": null,
+        "finance": null,
+        "address": null,
+        "phones": null,
+        "emails": [
+          {
+            "value": "BATYRMASTYR@GMAIL.COM",
+            "unrestricted_value": "BATYRMASTYR@GMAIL.COM",
+            "data": {
+              "local": "BATYRMASTYR",
+              "domain": "GMAIL.COM",
+              "type": null,
+              "source": "BATYRMASTYR@GMAIL.COM",
+              "qc": null
+            }
+          }
+        ],
+        "ogrn_date": 1682380800000,
+        "okved_type": "2014",
+        "employee_count": null
+      }
+    }
+  ]
+}

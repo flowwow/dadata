@@ -1,0 +1,547 @@
+{
+  "suggestions": [
+    {
+      "value": "ООО \"ФЛАУВАУ\"",
+      "unrestricted_value": "ООО \"ФЛАУВАУ\"",
+      "data": {
+        "kpp": "770201001",
+        "capital": {
+          "type": "УСТАВНЫЙ КАПИТАЛ",
+          "value": 421940.94
+        },
+        "invalid": null,
+        "management": {
+          "post": "ГЕНЕРАЛЬНЫЙ ДИРЕКТОР",
+          "disqualified": null,
+          "name": "Анонимов Аноним Анонимович"
+        },
+        "founders": [
+          {
+            "inn": "667115613875",
+            "fio": {
+              "surname": "Анонимов",
+              "name": "Аноним",
+              "patronymic": "Анонимович",
+              "gender": "MALE",
+              "source": "АНОНИМОВ АНОНИМ АНОНИМОВИЧ",
+              "qc": null
+            },
+            "hid": "3d5c791d26d91c56f9f53e09ce5451f56398ce3532fb3bc2046dbc35f696b0e7",
+            "type": "PHYSICAL",
+            "share": {
+              "value": 100,
+              "type": "PERCENT"
+            },
+            "invalidity": null
+          },
+          {
+            "inn": "771587058736",
+            "fio": {
+              "surname": "Анонимова",
+              "name": "Анонима",
+              "patronymic": "Анонимовна",
+              "gender": "FEMALE",
+              "source": "АНОНИМОВА АНОНИМА АНОНИМОВНА",
+              "qc": null
+            },
+            "hid": "0bb2b310e8b7e93e2bbca136874812180784e416223cd4dc8a83204ce2ce1684",
+            "type": "PHYSICAL",
+            "share": {
+              "numerator": 1687764,
+              "denominator": 42194094,
+              "type": "FRACTION"
+            },
+            "invalidity": null
+          }
+        ],
+        "managers": [
+          {
+            "inn": "667115613875",
+            "fio": {
+              "surname": "Анонимов",
+              "name": "Аноним",
+              "patronymic": "Анонимович",
+              "gender": "MALE",
+              "source": "Анонимов Аноним Анонимович",
+              "qc": null
+            },
+            "post": "ГЕНЕРАЛЬНЫЙ ДИРЕКТОР",
+            "hid": "3d5c791d26d91c56f9f53e09ce5451f56398ce3532fb3bc2046dbc35f696b0e7",
+            "type": "EMPLOYEE",
+            "invalidity": null
+          }
+        ],
+        "predecessors": null,
+        "successors": null,
+        "branch_type": "MAIN",
+        "branch_count": 0,
+        "source": null,
+        "qc": null,
+        "hid": "6fbd5fd6c8ba28d3c307bc172ad226a378d4b9ae33624de8bdf6e3838cee93ed",
+        "type": "LEGAL",
+        "state": {
+          "status": "ACTIVE",
+          "actuality_date": 1654646400000,
+          "code": null,
+          "registration_date": 1595980800000,
+          "liquidation_date": null
+        },
+        "opf": {
+          "type": "2014",
+          "full": "Общество с ограниченной ответственностью",
+          "code": "12300",
+          "short": "ООО"
+        },
+        "name": {
+          "full_with_opf": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"ФЛАУВАУ\"",
+          "latin": null,
+          "short_with_opf": "ООО \"ФЛАУВАУ\"",
+          "full": "ФЛАУВАУ",
+          "short": "ФЛАУВАУ"
+        },
+        "inn": "9702020445",
+        "ogrn": "1207700263198",
+        "okpo": "44997193",
+        "okato": "45286570000",
+        "oktmo": "45379000000",
+        "okogu": "4210011",
+        "okfs": "34",
+        "okved": "63.11",
+        "okveds": [
+          {
+            "main": true,
+            "type": "2014",
+            "code": "63.11",
+            "name": "Деятельность по обработке данных, предоставление услуг по размещению информации и связанная с этим деятельность"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.22",
+            "name": "Торговля оптовая цветами и растениями"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.31",
+            "name": "Торговля оптовая фруктами и овощами"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.36",
+            "name": "Торговля оптовая сахаром, шоколадом и сахаристыми кондитерскими изделиями"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.37",
+            "name": "Торговля оптовая кофе, чаем, какао и пряностями"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.41",
+            "name": "Торговля оптовая текстильными изделиями"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.42",
+            "name": "Торговля оптовая одеждой и обувью"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.45",
+            "name": "Торговля оптовая парфюмерными и косметическими товарами"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.48",
+            "name": "Торговля оптовая часами и ювелирными изделиями"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.49.42",
+            "name": "Торговля оптовая играми и игрушками"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.49.49",
+            "name": "Торговля оптовая прочими потребительскими товарами, не включенными в другие группировки"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "46.90",
+            "name": "Торговля оптовая неспециализированная"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.19",
+            "name": "Торговля розничная прочая в неспециализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.19.1",
+            "name": "Торговля розничная большим товарным ассортиментом с преобладанием непродовольственных товаров в неспециализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.21",
+            "name": "Торговля розничная фруктами и овощами в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.24",
+            "name": "Торговля розничная хлебом и хлебобулочными изделиями и кондитерскими изделиями в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.25",
+            "name": "Торговля розничная напитками в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.29",
+            "name": "Торговля розничная прочими пищевыми продуктами в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.51",
+            "name": "Торговля розничная текстильными изделиями в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.71",
+            "name": "Торговля розничная одеждой в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.72",
+            "name": "Торговля розничная обувью и изделиями из кожи в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.75",
+            "name": "Торговля розничная косметическими и товарами личной гигиены в специализированных магазинах"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.91",
+            "name": "Торговля розничная по почте или по информационно-коммуникационной сети Интернет"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.91.1",
+            "name": "Торговля розничная по почте"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.91.2",
+            "name": "Торговля розничная, осуществляемая непосредственно при помощи информационно-коммуникационной сети Интернет"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.91.3",
+            "name": "Торговля розничная через Интернет-аукционы"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.91.4",
+            "name": "Торговля розничная, осуществляемая непосредственно при помощи телевидения, радио, телефона"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "47.99",
+            "name": "Торговля розничная прочая вне магазинов, палаток, рынков"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "52.10",
+            "name": "Деятельность по складированию и хранению"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "53.20",
+            "name": "Деятельность почтовой связи прочая и курьерская деятельность"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "53.20.3",
+            "name": "Деятельность курьерская"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "62.01",
+            "name": "Разработка компьютерного программного обеспечения"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "62.02",
+            "name": "Деятельность консультативная и работы в области компьютерных технологий"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "62.09",
+            "name": "Деятельность, связанная с использованием вычислительной техники и информационных технологий, прочая"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "63.11.1",
+            "name": "Деятельность по созданию и использованию баз данных и информационных ресурсов"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "66.19",
+            "name": "Деятельность вспомогательная прочая в сфере финансовых услуг, кроме страхования и пенсионного обеспечения"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "70.22",
+            "name": "Консультирование по вопросам коммерческой деятельности и управления"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "72.19.4",
+            "name": "Научные исследования и разработки в области защиты информации"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "73.11",
+            "name": "Деятельность рекламных агентств"
+          },
+          {
+            "main": false,
+            "type": "2014",
+            "code": "94.11",
+            "name": "Деятельность коммерческих и предпринимательских членских организаций"
+          }
+        ],
+        "authorities": {
+          "fts_registration": {
+            "type": "FEDERAL_TAX_SERVICE",
+            "code": "7746",
+            "name": "Межрайонная инспекция Федеральной налоговой службы № 46 по г. Москве",
+            "address": "125373, г.Москва, Походный проезд, домовладение 3, стр.2"
+          },
+          "fts_report": {
+            "type": "FEDERAL_TAX_SERVICE",
+            "code": "7702",
+            "name": "Инспекция Федеральной налоговой службы № 2 по г.Москве",
+            "address": null
+          },
+          "pf": {
+            "type": "PENSION_FUND",
+            "code": "087107",
+            "name": "Государственное учреждение - Главное Управление Пенсионного фонда РФ №10 Управление №1 по г. Москве и Московской области муниципальный район Мещанское г. Москвы",
+            "address": null
+          },
+          "sif": {
+            "type": "SOCIAL_INSURANCE_FUND",
+            "code": "7701",
+            "name": "Филиал №1 Государственного учреждения - Московского регионального отделения Фонда социального страхования Российской Федерации",
+            "address": null
+          }
+        },
+        "documents": {
+          "fts_registration": null,
+          "fts_report": {
+            "type": "FTS_REPORT",
+            "series": null,
+            "number": null,
+            "issue_date": 1595980800000,
+            "issue_authority": "7702"
+          },
+          "pf_registration": {
+            "type": "PF_REGISTRATION",
+            "series": null,
+            "number": "087107099826",
+            "issue_date": 1596067200000,
+            "issue_authority": "087107"
+          },
+          "sif_registration": {
+            "type": "SIF_REGISTRATION",
+            "series": null,
+            "number": "770107886177011",
+            "issue_date": 1596585600000,
+            "issue_authority": "7701"
+          },
+          "smb": {
+            "category": "MICRO",
+            "type": "SMB",
+            "series": null,
+            "number": null,
+            "issue_date": 1597017600000,
+            "issue_authority": null
+          }
+        },
+        "licenses": null,
+        "finance": {
+          "tax_system": null,
+          "income": 608709000,
+          "expense": 609003000,
+          "debt": null,
+          "penalty": null,
+          "year": 2021
+        },
+        "address": {
+          "unrestricted_value": "129090, г Москва, Мещанский р-н, пр-кт Мира, д 3 стр 3, помещ 1",
+          "value": "г Москва, пр-кт Мира, д 3 стр 3, помещ 1",
+          "invalidity": null,
+          "data": {
+            "postal_code": "129090",
+            "country": "Россия",
+            "country_iso_code": "RU",
+            "federal_district": "Центральный",
+            "region_fias_id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+            "region_kladr_id": "7700000000000",
+            "region_iso_code": "RU-MOW",
+            "region_with_type": "г Москва",
+            "region_type": "г",
+            "region_type_full": "город",
+            "region": "Москва",
+            "area_fias_id": null,
+            "area_kladr_id": null,
+            "area_with_type": null,
+            "area_type": null,
+            "area_type_full": null,
+            "area": null,
+            "city_fias_id": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+            "city_kladr_id": "7700000000000",
+            "city_with_type": "г Москва",
+            "city_type": "г",
+            "city_type_full": "город",
+            "city": "Москва",
+            "city_area": "Центральный",
+            "city_district_fias_id": null,
+            "city_district_kladr_id": null,
+            "city_district_with_type": "Мещанский р-н",
+            "city_district_type": "р-н",
+            "city_district_type_full": "район",
+            "city_district": "Мещанский",
+            "settlement_fias_id": null,
+            "settlement_kladr_id": null,
+            "settlement_with_type": null,
+            "settlement_type": null,
+            "settlement_type_full": null,
+            "settlement": null,
+            "street_fias_id": "3caaf7f1-9b17-457b-93b2-b8afe9e9aa98",
+            "street_kladr_id": "77000000000185600",
+            "street_with_type": "пр-кт Мира",
+            "street_type": "пр-кт",
+            "street_type_full": "проспект",
+            "street": "Мира",
+            "stead_fias_id": null,
+            "stead_cadnum": null,
+            "stead_type": null,
+            "stead_type_full": null,
+            "stead": null,
+            "house_fias_id": "309b5ead-6163-46ed-8614-e3bc2b452b32",
+            "house_kladr_id": "7700000000018560082",
+            "house_cadnum": "77:01:0003043:1051",
+            "house_type": "д",
+            "house_type_full": "дом",
+            "house": "3",
+            "block_type": "стр",
+            "block_type_full": "строение",
+            "block": "3",
+            "entrance": null,
+            "floor": null,
+            "flat_fias_id": null,
+            "flat_cadnum": null,
+            "flat_type": "помещ",
+            "flat_type_full": "помещение",
+            "flat": "1",
+            "flat_area": null,
+            "square_meter_price": null,
+            "flat_price": null,
+            "room_fias_id": null,
+            "room_cadnum": null,
+            "room_type": null,
+            "room_type_full": null,
+            "room": null,
+            "postal_box": null,
+            "fias_id": "309b5ead-6163-46ed-8614-e3bc2b452b32",
+            "fias_code": "77000000000000018560082",
+            "fias_level": "8",
+            "fias_actuality_state": "0",
+            "kladr_id": "7700000000018560082",
+            "geoname_id": "524901",
+            "capital_marker": "0",
+            "okato": "45286570000",
+            "oktmo": "45379000",
+            "tax_office": "7702",
+            "tax_office_legal": "7702",
+            "timezone": "UTC+3",
+            "geo_lat": "55.7734143",
+            "geo_lon": "37.6316747",
+            "beltway_hit": "IN_MKAD",
+            "beltway_distance": null,
+            "metro": [
+              {
+                "name": "Сухаревская",
+                "line": "Калужско-Рижская",
+                "distance": 0.1
+              },
+              {
+                "name": "Проспект Мира",
+                "line": "Кольцевая",
+                "distance": 0.7
+              },
+              {
+                "name": "Цветной бульвар",
+                "line": "Серпуховско-Тимирязевская",
+                "distance": 0.7
+              }
+            ],
+            "divisions": null,
+            "qc_geo": "0",
+            "qc_complete": null,
+            "qc_house": null,
+            "history_values": null,
+            "unparsed_parts": null,
+            "source": "129090, ГОРОД МОСКВА, ПР-КТ МИРА, Д. 3, СТР. 3, ЭТАЖ МАНСАРДА, ПОМ. 1",
+            "qc": "0"
+          }
+        },
+        "phones": null,
+        "emails": null,
+        "ogrn_date": 1595980800000,
+        "okved_type": "2014",
+        "employee_count": 112
+      }
+    }
+  ]
+}
